@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Mi Sitio Web</title>
+ 
+    <style type="text/css">
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color:#e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos de encabezado */
+        #header {
+            background-color: #f0f8ff;
+            color: #333333;
+            padding: 20px;
+        }
+
+        #header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Estilos de navegación */
+        #navigation {
+            background-color: #8b4513;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        #navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navigation li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        #navigation li:last-child {
+            margin-right: 0;
+        }
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        .header-vertical {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .header-vertical ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .header-vertical ul li {
+            margin-bottom: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+          }
+
+        #navigation a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navigation a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos de contenido */
+        #content {
+            padding: 20px;
+        }
+
+        /* Estilos de pie de página */
+        #footer {
+            background-color: #00766b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos de enlaces */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+      
+        /* Estilo para las secciones */
+        section {
+            padding: 60px 20px;
+            display: none; /* Ocultar todas las secciones por defecto */
+        }
+        section.active {
+            display: block; /* Mostrar solo la sección activa */
+        }
+
+        /* Estilos del carrusel */
+        .slider-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            overflow: hidden;
+        }
+
+        .slide img {
+            width: 50%;
+            height: auto;
+        }
+
+        /* Botones del carrusel */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 18px;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    <main>
+      
+      <style>
+     .container  {
+        overflow: auto;
+      }
+        .image {
+        position: absolute;
+         top: 10px
+         left: 10px;
+         height: 100px
+         
+     }
+    </style>
+</head>
+     
+<body>
+ 
+      <div class="container">
+               <img src= "Logo.png"
+      alt="Descripcion de la imagen"
+      class="image">
+            <aside class="sidebar">
+ </body>
+
+    <div class="container">
+        <div id="header">
+            <h1><CENTER>SkinCare</h1></CENTER>
+        </div>
+
+        <div id="navigation">
+            <nav>
+               <center>
+                <ul>
+                    <li><a href="index.html" onclick="showSection(event,'Inicio')">Inicio</a></li>
+                    <li><a href="#Contacto" onclick="showSection(event,'Contacto')">Contacto</a></li>
+                </ul>
+              </center>
+            </nav>
+        </div>
+  
+        <section id="Inicio" class="active">
+              <center>
+            <div class="slider-container">
+                <div class="slider">
+                     
+                    <div class="slide">
+                        <img src="imagen1.jpg" alt="Imagen 1">
+                        <div class="slide-text">
+                            
+                            <p>Primer Paso Hacer una limpieza con agua evaporada(tibia)</p>
+                        </div>
+                               
+                    </div>
+              </center>
+                           <center>
+                    <div class="slide">
+                        <img src="imagen2.jpg" alt="Imagen 2">
+                        <div class="slide-text">
+                            
+                            <p>Segundo Paso con un algodon echarse el tonico</p>
+                        </div>
+                    </div>
+     
+                     <div class="slide">
+                        <img src="imagen3.jpg" alt="Imagen 3">
+                        <div class="slide-text">
+                            
+                            <p>Tercer Paso Usar contorno de ojos haciendo leves masajes con dos dedos</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagen4.jpg" alt="Imagen 4">
+                        <div class="slide-text">
+                            
+                            <p>Cuarto Paso usar el gotario(Serum) en pocas cantidad sobre la cara y regar por toda ella</p>
+                        </div>
+                    </div>
+                       
+                        <div class="slide">
+                        <img src="imagen5.jpg" alt="Imagen 5">
+                        <div class="slide-text">
+                            
+                            <p>Quinto Paso usa la crema hidratante al tipo de piel que tengas</p>
+                        </div>
+                    </div>
+   
+                   <div class="slide">
+                        <img src="imagen6.png" alt="Imagen 6">
+                        <div class="slide-text">
+                            
+                            <p>Sexto Paso y ultimo usar protector solar </p>
+                        </div>
+                    </div>
+                    <!-- Agrega más slides según sea necesario -->
+                </div>
+                <div class="prev" onclick="moveSlide(-1)">❮</div>
+                <div class="next" onclick="moveSlide(1)">❯</div>
+            </div>
+               </center>
+        </section>
+
+        <section id="Contacto">
+            <p>Numero Demartologo 0087653224</p>
+        </section>
+    </div>
+<div class="content">
+        <div class="header-vertical">
+            <ul>
+                <li><a href="#Dia">Dia</a></li>
+                <li><a href="Noche.html">Noche</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2024 Mi Sitio Web</p>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.querySelectorAll('.slide');
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
